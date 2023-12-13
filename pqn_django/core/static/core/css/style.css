@@ -1,0 +1,730 @@
+
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    height: 100vh;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*COMIENZA EL HEADER*/
+
+#nav_header {
+
+    margin-top: 0.3%;
+}
+
+#nav_header nav {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center ;
+    padding-top: 10px;
+    /*z-index: 1000;
+    position: fixed;
+    top: 0;
+     */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#nav_header ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+#nav_header ul li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#nav_header ul li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#nav_header ul li div:hover img {
+    transition: transform 0.3s;
+    transform: scale(1.1); 
+}
+
+
+ul li img {
+    width: 60px; 
+    height: 60px;
+}
+
+.nav-text {
+    margin-top: 5%;
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Sarala', sans-serif;
+    color: #000;
+}
+
+.nav-text:hover {
+    color: rgb(128, 128, 128);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.word-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Paytone One', sans-serif; 
+    color: black;
+    
+}
+
+.first-word {
+    padding: 0; 
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+    line-height: 10px;
+    margin: 0;
+    
+}
+
+.second-word {
+    font-size: 1.8em;
+    letter-spacing: 0.09em;
+    padding: 0; 
+    margin: 0;
+}
+
+
+.thirdh-word {
+    letter-spacing: -0.09em;
+    padding: 0; 
+    margin: 0;
+    line-height: 5px;
+}
+
+/*Transicion para el logo*/
+.word-container {
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.word-container:hover {
+    color: rgb(25, 101, 18);
+}
+
+
+/* ACA TERMINA EL HEADER*/
+
+
+/*COMIENZA PORTADA*/
+
+.pre-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.centered-content {
+    text-align: center;
+    position: relative;
+}
+
+.centered-content img {
+    max-width: 100%;
+    display: block;
+}
+
+.centered-content h1 {
+    font-size: 4em;
+    font-family: 'Inter', serif;
+    color: #ffffff;
+    font-weight: 1000;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.centered-content h2 {
+    font-size: 5em;
+    font-family: 'Inter', serif;
+    color: #ffffff;
+    font-weight: 0;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    line-height: 0.7;
+}
+
+.arg-bold {
+    font-weight: 1000;
+}
+
+/*Animacion scroll*/
+
+.arrow-down {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    filter: grayscale(100%);
+    transform: translate(-50%, -50%);
+    -webkit-filter: grayscale(100%);
+    font-size: 2.1em;
+}
+
+/* Animación de agitación vertical */
+@keyframes shake-vertical {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    10%, 30%, 50%, 70% {
+        transform: translateY(-8px);
+    }
+    20%, 40%, 60% {
+        transform: translateY(8px);
+    }
+    80% {
+        transform: translateY(6.4px);
+    }
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+.shake-vertical {
+    animation: shake-vertical 2s linear both infinite;
+    -webkit-animation: shake-vertical 2s linear both infinite;
+}
+
+/* Portadas parques custom */
+
+
+
+
+/*COMIENZA EL GRID*/
+
+.contenedor {
+
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    position: relative;
+}
+
+
+/* COMIENZAN CAROUSEL */
+
+
+/* Captions de carousel */
+
+.contenedor_titulo_carousel {
+
+    grid-column: span 3;
+    margin: 5px 15px;
+    position: relative;
+}
+
+.contenedor_titulo_carousel h4 {
+    font-size: 2.3em;
+    padding: 12px 0;
+    font-weight: 1000;
+    font-family: 'Inter', sans-serif;
+    
+    color: #01172a;
+}
+
+.contenedor_titulo_carousel p {
+
+    font-size: 1.2em;
+    font-family: 'Sarala', sans-serif;
+    color: #616161;
+}
+
+/* Slides carousels */
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#caption {
+    background-color: rgba(129, 150, 122, 0.644);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.caption-text {
+    color: rgb(230, 230, 230);
+    font-size: 18px; 
+}
+
+/*COMIENZO INFO PARQUES*/
+
+#container_pq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#margen_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 1% auto;
+}
+
+.parque, .parque_a, .parque_b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #CCCCCC;
+    margin: 1%;
+    padding: 1% 0;
+}
+
+.texto {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagen_parque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+}
+
+.parque_b .texto {
+    grid-column: 1;
+}
+
+.parque_b .imagen_parque {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.imagen_parque img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.texto h5 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+ /*FIN INFO PARQUES*/
+
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    background-color: white ;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    /* height: 40%; */
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #CCCCCC;
+    }
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    }
+    
+.footer-parque h5{
+    font-family: 'Inter',sans-serif;
+    color: #CCCCCC;
+    font-weight: 600;
+    }
+
+#lista{
+    width: 80%;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li a {
+    font-family: 'Inter', sans-serif;
+    color: #CCCCCC;
+    font-weight: 200;
+}
+
+footer ul li a:hover{
+    color: rgb(128, 128, 128);
+}
+
+
+#redes{
+    width: 50%;
+    text-align: left;
+    padding: 0px;
+}
+
+
+#redes p{
+    color: #CCCCCC;
+}
+
+#redes > div:nth-child(2) a {
+    color: #CCCCCC;
+}
+
+/* COMIENZA CSS DE FORMULARIO*/
+
+.pre-form {
+    width: 100%;
+    background: #f9f9f9;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 50%;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+
+
+/*Comienza CSS para mapa*/
+
+.map-container {
+
+    background-color: #CCCCCC;
+    width: 100%;
+    height: 100%;
+}
+
+.map{
+    width: 80%;
+    margin: 2% auto;
+    background-color: #CCCCCC;
+    height: 60%
+}
+
+/*-----------------------------------------*/
+/* COMIENA MEDIA QUERY*/
+
+
+/*TABLET*/
+@media only screen and (max-width: 1024px) {
+
+    /*INDEX*/
+
+    .arrow-down {
+        display: none;
+    }
+
+    .centered-content h2 {
+
+        font-size: 3em;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+
+    .contenedor_titulo_carousel {
+        grid-column: span 1;
+    }
+
+    .contenedor_titulo_carousel h4 {
+        font-size: 2.em;
+    }
+
+    .contenedor_titulo_carousel p {
+        font-size: 1.3em;
+    }
+
+    .carousel {
+        width: 75%;
+    }
+
+    /*INFO PARQUES*/
+
+    #margen_container {
+        grid-gap: 20px;
+        margin: 2% auto;
+    }
+
+    .parque,
+    .parque_a,
+    .parque_b {
+        grid-template-columns: 1fr;
+    }
+
+    .parque .texto,
+    .parque_a .texto,
+    .parque_b .texto {
+        grid-column: 1;
+    }
+
+    .parque .imagen_parque,
+    .parque_a .imagen_parque,
+    .parque_b .imagen_parque {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .texto{
+        width: 80%;
+    }
+
+    .texto h5 {
+        font-size: 1.8em;
+    }
+
+    .texto p {
+        font-size: 1.1em;
+    }
+
+    .imagen_parque img {
+        width: 80%;
+    }
+
+}
+
+
+/*MOVIL*/
+
+@media only screen and (max-width: 768px) {
+
+    /*INDEX*/
+
+    nav {
+        position: relative;
+        z-index: 0;
+    }
+
+    #nav_header ul li {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    ul li img {
+        width: 30px; 
+        height: 30px;
+    }
+
+    .nav-text {
+        font-size: 12px;
+    }
+
+    .first-word {
+        font-size: 1.3em;
+    }
+
+    .second-word {
+        font-size: 1em;
+    }
+
+    .thirdh-word {
+        font-size: 0.6em;
+    }
+    
+    .arrow-down {
+        display: none;
+    }
+
+    .contain {
+        
+        flex-direction: column;
+        }
+    .contain > div {
+        margin: 10px 0;
+        }
+    .centered-content h2 {
+        font-size: 1.6em;
+        line-height: 0.2;
+        left: 20%;
+    }
+
+    .centered-content h1 {
+        font-size: 1.2em;
+    }
+
+    .contenedor {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .contenedor_titulo_carousel {
+        grid-column: span 1;
+    }
+
+    .contenedor_titulo_carousel h4 {
+        font-size: 1.3em;
+    }
+
+    .contenedor_titulo_carousel p {
+        font-size: 1em;
+    }
+
+    .carousel {
+        width: 94%;
+    }
+
+    /*INFO PARQUES*/
+
+    #margen_container {
+        width: 90%;
+    }
+
+    .parque,
+    .parque_a,
+    .parque_b {
+        grid-template-columns: 1fr;
+    }
+
+    .parque .texto,
+    .parque_a .texto,
+    .parque_b .texto {
+        grid-column: 1;
+    }
+
+    .parque .imagen_parque,
+    .parque_a .imagen_parque,
+    .parque_b .imagen_parque {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .texto {
+        width: 90%;
+    }
+
+    .texto h5 {
+        font-size: 1em;
+    }
+
+    .texto p {
+        font-size: 0.8em;
+    }
+
+}

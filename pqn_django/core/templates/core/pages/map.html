@@ -1,0 +1,13 @@
+{% extends "core/index_base.html" %}
+{% block title %}
+Mapa de Parques Nacionales
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+    <div class="map" id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap" async defer></script>
+    <script src="{% static 'core/map.js' %}"></script>
+{% endblock content %}

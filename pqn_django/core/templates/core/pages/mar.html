@@ -1,0 +1,40 @@
+{% extends "core/index_base.html" %}
+{% block title %}
+Mar Argentino
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+    <div class="pre-grid-container">
+        <div class="centered-content">
+            <div class="imagen_mar">
+                <img src="{% static 'core/img/portada_mar.jpg' %}" alt="Paisaje del Mar Austral Argentino">
+            </div>
+            <h1 class="hmar">Áreas Marinas Protegidas</h1>
+        </div>
+    </div>
+    <div id="container_pq">
+        <div id="margen_container">
+            <div class="parque_a">
+                <div class="imagen_parque">
+                    <img src="{% static 'core/img/foto_pq/mar1.jpg' %}" alt="Área Marina Protegida Namuncurá ">
+                </div>
+                <div class="texto">
+                    <h5>Área Marina Protegida Namuncurá Banco Burdwood</h5>
+                    <p>El Área Marina Protegida Namuncurá Banco Burdwood, en el Atlántico Sudoccidental, alberga dos áreas marinas protegidas: Namuncurá Banco Burdwood I y Namuncurá Banco Burdwood II. Situada al este de la Isla de los Estados y al sur de las Islas Malvinas, este banco submarino, que se extiende desde la Cordillera de los Andes, presenta bordes escarpados que generan surgencias de aguas profundas ricas en nutrientes. El área alberga una biodiversidad marina excepcional, incluyendo esponjas, corales y especies bentónicas vulnerables que transforman el lecho marino en un 'bosque animal'. Además de su importancia ecológica, el área es esencial para la reproducción de diversas especies marinas, como la sardina fueguina y peces de fondo. También es un hábitat crucial para aves marinas y mamíferos marinos. En su emblema se destacan los corales de agua fría y los peces nototénidos, como la merluza negra, que han desarrollado adaptaciones para sobrevivir en aguas frías. La integración de las dos áreas dio lugar a tres categorías de manejo: Reserva Nacional Marina, Parque Nacional Marino y Reserva Nacional Marina Estricta.
+                    </p>
+                </div>
+            </div>
+            <div class="parque_b">
+                <div class="imagen_parque">
+                    <img src="{% static 'core/img/foto_pq/mar2.jpg' %}" alt="Área Marina Protegida Yaganes">
+                </div>
+                <div class="texto">
+                    <h5>Área Marina Protegida Yaganes</h5>
+                    <p>El Área Marina Protegida Yaganes, en el extremo sur de Argentina, es un tesoro natural que conecta los océanos Pacífico y Atlántico y se caracteriza por su excepcional biodiversidad marina. Este espacio alberga valiosos jardines de corales de agua fría y sirve como hábitat clave para la reproducción de especies comerciales, como las merluzas. Además, es esencial para una variedad de aves marinas y mamíferos marinos, incluyendo el albatros cabeza gris y el albatros errante. La gestión del área se divide en tres categorías, con fondos designados como Reserva Nacional Marina Estricta y sectores de la columna de agua como Reserva Nacional Marina y Parque Nacional Marino. El emblema del área resalta los montes submarinos y el tiburón sardinero, una especie vulnerable, junto con los albatros, que enfrentan amenazas por la captura incidental en redes de pesca de arrastre, subrayando la importancia de su protección.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}  
