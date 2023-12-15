@@ -11,4 +11,4 @@ def formulario_contacto(request):
     else:
         form = ContactoForm()
 
-    return render(request, 'core/contact.html', {'form': form})
+    return render(request, 'eventos/contact.html', {'form': form})

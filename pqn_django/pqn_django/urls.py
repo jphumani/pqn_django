@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
+from eventos  import views as eventos_views
 
 urlpatterns = [
     path('index_base',core_views.index_base,name="index_base"),
@@ -29,5 +30,5 @@ urlpatterns = [
     path('mar',core_views.mar,name="mar"),
     path('map',core_views.map,name="map"),
     path('admin/', admin.site.urls),
-    path('contact',core_views.contact,name="contact"),
+    path('formulario_contacto',eventos_views.formulario_contacto,name="formulario_contacto"),
 ]
