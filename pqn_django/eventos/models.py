@@ -12,3 +12,10 @@ class Evento(models.Model):
     #Con esto resuelvo que el nombre sea que crea el usuario.
     def __str__(self) -> str:
         return self.title
+    
+class Contacto(models.Model):
+    nombre_completo = models.CharField(max_length=100)
+    correo_electronico = models.EmailField(primary_key=True)
+    telefono_contacto = models.CharField(max_length=15)
+    def __str__(self):
+        return "{} {}".format(self.nombre_completo, self.correo_electronico)

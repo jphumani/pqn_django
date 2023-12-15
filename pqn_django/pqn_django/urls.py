@@ -29,4 +29,5 @@ urlpatterns = [
     path('mar',core_views.mar,name="mar"),
     path('map',core_views.map,name="map"),
     path('admin/', admin.site.urls),
+    path('contact',core_views.contact,name="contact"),
 ]
