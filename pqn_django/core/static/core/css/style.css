@@ -432,18 +432,21 @@ ul li img {
     flex-direction: column;
     justify-content: center;
     font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
 }
 
-.texto_copete {
+.texto_copete h3 {
 
-    margin: 3% auto;
+    margin: 3% auto 0;
     width: 50%;
     justify-content: center;
     text-align: justify;
     font-family: 'Inter', sans-serif;
     font-style: oblique;
-    border-left: 3px solid #000;
+    font-size: 1.5em;
+    border-left: 3px solid #547835;
     padding-left: 2%;
+    color: #547835;
 
 }
 
@@ -790,5 +793,31 @@ input[type="reset"]:hover {
     .texto p {
         font-size: 0.8em;
     }
+
+    /* COMIENZO SERVICIOS ADICIONALES*/
+
+    .servicios_titulo h2 {
+        font-size: 1.2em;
+    }
+
+    .servicios_detalle p {
+        font-size: 0.8em;
+    }
+
+    .texto_copete h3{
+        width: 60%;
+        font-size: 1em;
+        padding: 4% auto 0;
+    }
+
+    .texto_servicios p {
+        font-size: 0.8em;
+    }
+
+    .imagen_servicios {
+        padding-bottom: 2%;
+    }
+
+    /* FIN SERVICIOS ADICIONALES*/
 
 }

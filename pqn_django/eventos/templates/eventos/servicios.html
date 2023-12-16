@@ -10,18 +10,19 @@ Servicios adicionales
 {% for evento in eventos %}
 
 
-    <!-- </div>
+    </div>
     <div id="servicios_container">
         <div class="servicios_titulo"><h2>{{evento.title}}</h2></div>
         <div class="servicios_detalle"><p>{{evento.updated}}</p></div>
         <div class="imagen_servicios">
             <img src="{{evento.picture.url}}" alt="Parque Nacional Los Glaciares">
         </div>
+        <div class="texto_copete"><h3>{{evento.copete}}</h3></div>
         <div class="texto_servicios">
-            <div class="texto_copete"><h3>{{evento.copete}}</h3></div>
             <p>{{evento.description}}</p>
         </div>
-    </div> -->
+    </div>
+{% comment %}     
     <div id="servicios_container" style="display: grid; width: 80%; margin: 1% auto; padding: 2% auto;">
 
         <div class="servicios_titulo" style="text-align: left; font-family: 'Inter', sans-serif; width: 80%; margin: 0 auto; padding-top: 3%;">
@@ -44,7 +45,7 @@ Servicios adicionales
           <p style="font-size: 1.2em;">{{evento.description}}</p>
         </div>
       
-      </div>
+      </div> {% endcomment %}
 
 {% endfor %}    
 {% endblock %}
