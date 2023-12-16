@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views
+from eventos import views as eventos_views
+from django.conf import settings
 
 urlpatterns = [
     path('index_base',core_views.index_base,name="index_base"),
@@ -29,4 +31,9 @@ urlpatterns = [
     path('mar',core_views.mar,name="mar"),
     path('map',core_views.map,name="map"),
     path('admin/', admin.site.urls),
+    path('servicios', eventos_views.servicios, name="servicios"),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)

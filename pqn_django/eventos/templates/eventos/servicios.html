@@ -1,0 +1,15 @@
+{% extends "core/index_base.html" %}
+{% block title %}
+Servicios adicionales
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+{% for evento in eventos %}
+
+    <div class="map" id="map">
+        <img src="{{evento.picture.url}}" alt="IMG1">
+        <p>{{evento.description}}</p>
+    </div>
+{% endfor %}    
+{% endblock content %}
