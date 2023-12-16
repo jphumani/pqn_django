@@ -3,13 +3,48 @@
 Servicios adicionales
 {% endblock title %}
 
+
+
 {% block content %}
-{% load static %}
+
 {% for evento in eventos %}
 
-    <div class="map" id="map">
-        <img src="{{evento.picture.url}}" alt="IMG1">
-        <p>{{evento.description}}</p>
-    </div>
+
+    <!-- </div>
+    <div id="servicios_container">
+        <div class="servicios_titulo"><h2>{{evento.title}}</h2></div>
+        <div class="servicios_detalle"><p>{{evento.updated}}</p></div>
+        <div class="imagen_servicios">
+            <img src="{{evento.picture.url}}" alt="Parque Nacional Los Glaciares">
+        </div>
+        <div class="texto_servicios">
+            <div class="texto_copete"><h3>{{evento.copete}}</h3></div>
+            <p>{{evento.description}}</p>
+        </div>
+    </div> -->
+    <div id="servicios_container" style="display: grid; width: 80%; margin: 1% auto; padding: 2% auto;">
+
+        <div class="servicios_titulo" style="text-align: left; font-family: 'Inter', sans-serif; width: 80%; margin: 0 auto; padding-top: 3%;">
+          <h2 style="font-size: 2em; @media only screen and (max-width: 768px) {font-size: 1em;}">{{evento.title}}</h2>
+        </div>
+      
+        <div class="servicios_detalle" style="text-align: left; font-family: 'Inter', sans-serif; width: 80%; margin: 0 auto;">
+          <p>{{evento.updated}}</p>  
+        </div>
+      
+        <div class="imagen_servicios" style="display: flex; justify-content: center; align-items: center;">
+          <img src="{{evento.picture.url}}" alt="Parque Nacional Los Glaciares" style="width: 80%; border-radius: 10px;">
+        </div>
+      
+        <div class="texto_copete" style="margin: 3% auto 0; width: 50%; justify-content: center; text-align: justify; font-family: 'Inter', sans-serif; font-style: oblique; border-left: 3px solid #547835; color: #547835; padding-left: 2%;">
+            <h4 style="font-size: 1.5em;">{{evento.copete}}</h4>
+          </div>
+
+        <div class="texto_servicios" style="margin: 3% auto; width: 80%; display: flex; flex-direction: column; justify-content: center; font-family: 'Inter', sans-serif;">
+          <p style="font-size: 1.2em;">{{evento.description}}</p>
+        </div>
+      
+      </div>
+
 {% endfor %}    
-{% endblock content %}
+{% endblock %}

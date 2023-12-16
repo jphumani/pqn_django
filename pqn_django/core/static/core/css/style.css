@@ -388,6 +388,70 @@ ul li img {
  /*FIN INFO PARQUES*/
 
 
+ /*INICIO SERVICIOS ADICIONALES*/
+
+ #servicios_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 1% auto;
+    padding: 2% auto;
+    
+}
+
+.servicios_titulo {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+.servicios_detalle {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imagen_servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_servicios img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.texto_servicios {
+    margin: 3% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.texto_copete {
+
+    margin: 3% auto;
+    width: 50%;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-style: oblique;
+    border-left: 3px solid #000;
+    padding-left: 2%;
+
+}
+
+
+
+ /*FIN SERVICIOS ADICIONALES*/
+
+
 
 /* FOOTER */
 
