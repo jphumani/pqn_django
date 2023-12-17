@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from core import views as core_views
 from eventos import views as eventos_views
+from contact import views as contact_views
 from django.conf import settings
 
 urlpatterns = [
@@ -32,6 +33,7 @@ urlpatterns = [
     path('map',core_views.map,name="map"),
     path('admin/', admin.site.urls),
     path('servicios', eventos_views.servicios, name="servicios"),
+    path('contact', contact_views.contact, name="contact"),    
 ]
 
 if settings.DEBUG:
