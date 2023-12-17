@@ -28,3 +28,6 @@ def mar(request):
 def map(request):
     return render(request,"core/pages/map.html")
 
+def contact(request):
+    return render(request,"core/pages/contact.html" )
+

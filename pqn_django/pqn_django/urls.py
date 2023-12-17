@@ -30,6 +30,7 @@ urlpatterns = [
     path('austral',core_views.austral,name="austral"),
     path('mar',core_views.mar,name="mar"),
     path('map',core_views.map,name="map"),
+    path('contact',core_views.contact,name="contact"),
     path('admin/', admin.site.urls),
     path('servicios', eventos_views.servicios, name="servicios"),
 ]
