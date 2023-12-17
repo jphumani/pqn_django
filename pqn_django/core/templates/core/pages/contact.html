@@ -5,17 +5,35 @@ Contacto
 
 {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 
     <div class="pre-form">
     <div class="form-container">
         <h2>Contacto</h2>
-        <form>
+        <form action="" method="POST">
             {% csrf_token %}
 
-            {{ form }}
+            {{ form|crispy }}
+
+            <input type="submit" value="Enviar" onclick="validateEmail()">
+            <input type="reset" value="Limpiar">
+
 
         </form>
+    
+        {% if 'ok' in request.GET %}
+            <div class="alert alert-success mt-5" role="alert">
+                <strong>El mensaje a sido enviado</strong>
+            </div>    
+        {% endif %}
+
+        {% if 'error' in request.GET %}
+        <div class="alert alert-success mt-5" role="alert">
+            <strong>No se ha podido enviar el mensaje</strong>
+        </div>    
+        {% endif %}
+
     </div>
 
     <script>
