@@ -16,5 +16,4 @@ def contact(request):
         else:
             return redirect(reverse('contact')+'?error')            
             
-    return render(request,"core/pages/contact.html", {"form":contact_form})
-
+    return render(request,"contact/contact.html", {"form":contact_form})
