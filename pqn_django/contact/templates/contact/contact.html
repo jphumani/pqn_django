@@ -6,26 +6,26 @@
 
 <div class="form-container">
     <h2>Formulario de Contacto</h2>
-    <form>
-        <form method='POST'>
-            {% csrf_token %}
+    <form method='POST'>
+        {% csrf_token %}
 
-            {{ form|crispy }}
+        {{ form|crispy }}
         <br> <br> 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpiar"> 
-        </form>
-        {% if 'ok' in request.GET %}
-        <div class="msjalerta" role='alert'>
-            <p>El mensaje fue enviado con exito!</p>
-        </div>
-        {% endif %}
+    </form>
 
-        {% if 'error' in request.GET %}
-        <div class="msjalerta" role='alert'>
-            <p>El mensaje no se ha podido enviar con exito!</p>
-        </div>
-        {% endif %}
+    {% if 'ok' in request.GET %}
+    <div class="msjalerta" role='alert'>
+        <p>El mensaje fue enviado con éxito!</p>
+    </div>
+    {% endif %}
 
+    {% if 'error' in request.GET %}
+    <div class="msjalerta" role='alert'>
+        <p>El mensaje no se ha podido enviar con éxito!</p>
+    </div>
+    {% endif %}
 </div>
-    {% endblock content %} 
+
+{% endblock content %}
